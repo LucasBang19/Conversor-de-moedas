@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>CodeClub Convert Money</title>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>CodeClube Convert Money</h1>
+        </header>
+
+        <main>
+            <label>
+                Converter <i>De</i>
+                <select>
+                    <option>
+                        R$ Brasileiro
+                    </option>
+
+                </select>
+
+            </label>
+
+            <label>
+                Converter <i>para</i>
+                <select id="select-currency">
+                    <option>
+                        US$ Dólar Americano
+                    </option>
+                    <option>
+                        € Euro
+                    </option>
+
+                </select>
+
+            </label>
+
+            <label>
+                Valor
+                <input id="input-real" placeholder="R$ 10.000,00">
+            </label>
+
+            <button id="convert-button" type="button">Converter</button>
+
+            <section>
+                <div class="first-logo">
+                    <img src="./img/brasil.png" alt="bandeira-br">
+                    <p class="real ">Real</p>
+                    <p class="valor" id="valorHTML">R$ 10.000,00</p>
+                </div>
+                <div class="seta">
+                    <img src="./img/Group.svg" alt="bandeira-seta">
+                </div>
+                <div class="second-logo">
+                    <img id="currency-img" src="./img/estados-unidos (1) 1.svg" alt="bandeira-eua">
+                    <p class="real2" id="currency-name">Dólar americano</p>
+                    <p class="valor2" id="valorHTML2">US$ 2.000,00</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="./scripts.js"></script>
+
+</html>
